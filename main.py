@@ -1,21 +1,3 @@
-# import base64
-#
-# def print_hi(name):
-#     # Use a breakpoint in the code line below to debug your script.
-#     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-#
-# # def decode_from_base64(encoded_string):
-# #     decoded_message = base64.b64decode('IFRXI2LWMU======').decode('utf-8')
-#
-# # Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-#     # decode_from_base64('IFRXI2LWMU======')
-#     encoded_message = "IFRXI2LWMU======"
-#     decoded_message = base64.b64decode(encoded_message).decode('utf-8')
-#     print(decoded_message)
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-
 import base64
 import os, sys
 import numpy as np
@@ -30,13 +12,6 @@ def decode_from_base32(encoded_string):
     return decoded_string
 
 
-# def listdirs(rootdir):
-#     for it in os.scandir(rootdir):
-#         if it.is_dir():
-#             print(it)
-# listdirs(it)
-# os.rename(it, it + '1')
-# os.rename(it, 'new_name')
 
 def decode_folder_names(path):
     for folder_name in os.listdir(path):
